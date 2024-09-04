@@ -4,6 +4,5 @@
      ./hypr/hyprland.nix
      ./hypr/waybar.nix
      ./cursor.nix
-     ./walker.nix
   ];
 }
