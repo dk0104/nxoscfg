@@ -1,4 +1,8 @@
 {
+   home.file.".config/waybar/scripts".source = {
+     cource = ./waybar_scripts;
+     executable = true;
+   }
    programs.waybar = {
     enable = true;
     settings = {
@@ -8,7 +12,7 @@
         margin = "9 13 -10 18";
 
         modules-left = ["hyprland/workspaces" "hyprland/language" "keyboard-state" "hyprland/submap"];
-        modules-center = ["clock" ];
+        modules-center = ["clock" "custom/weather"];
         modules-right = ["pulseaudio" "custom/mem" "cpu" "backlight" "battery" "tray"];
 
         "hyprland/workspaces" = {

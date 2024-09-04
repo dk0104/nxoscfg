@@ -1,8 +1,8 @@
 {
   imports = [
      ./alacritty.nix
-     ./hyprland.nix
-     ./waybar.nix
+     ./hypr/hyprland.nix
+     ./hypr/waybar.nix
      ./cursor.nix
   ];
 }
