@@ -7,10 +7,10 @@
     users.dk = {
       isNormalUser = true;
       description = "Denis Keksel";
-      extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" ];
+      extraGroups = ["audio" "networkmanager" "wheel" "input" "libvirtd" ];
       packages = with pkgs; [
         zoxide
-        
+        pavucontrol
       ];
     };
   };
