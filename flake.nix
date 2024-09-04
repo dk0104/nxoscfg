@@ -6,6 +6,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    walker.url = "github:abenz1267/walker";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -14,7 +15,7 @@
 
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-stable, home-manager, ... }:{
+  outputs = inputs@{ self, nixpkgs, nixpkgs-stable, home-manager ,walker , ... }:{
 
     nixosConfigurations = {
       dkws = nixpkgs.lib.nixosSystem {

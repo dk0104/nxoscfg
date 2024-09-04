@@ -19,6 +19,7 @@
     obsidian
     brave
     vscode
+    mako
 
 
     # Coding stuff
@@ -69,6 +70,8 @@
     xwayland
     wl-clipboard
     cliphist
+    hyprlandPlugins.hyprexpo
+    hyprlandPlugins.hy3
    # hyprland
 
     # WMs and stuff
