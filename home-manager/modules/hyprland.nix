@@ -8,7 +8,10 @@
     settings = {
       "$mainMod" = "SUPER";
 
- #     monitor = ",1920x1080@90,auto,1";
+      monitor = [ 
+        "eDP,1920x1080@90,auto,1"
+        "HDMI-A-1,2560x1440@59.95,auto,2,transform, 2"
+     ];
 
       env = [
         "XDG_CURRENT_DESKTOP,Hyprland"
@@ -111,7 +114,7 @@
       ];
 
       exec-once = [
-        "swww init"
+        "swww-daemon "
         "swww img ~/wallpapers/os/nix-black-4k.png"
         "waybar"
         "wl-paste --type text --watch cliphist store"

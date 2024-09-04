@@ -8,7 +8,10 @@
       isNormalUser = true;
       description = "Denis Keksel";
       extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" ];
-      packages = with pkgs; [];
+      packages = with pkgs; [
+        zoxide
+        
+      ];
     };
   };
 
