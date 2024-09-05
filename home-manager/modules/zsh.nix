@@ -13,7 +13,6 @@
     enable = true;
     plugins = [ 
       "git"
-       "thefuck"
        "alias-finder"
        "aliases"
        "colemak"
