@@ -6,12 +6,10 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    hy3 = {
-      url = "github:outfoxxed/hy3"; # where {version} is the hyprland release version
-      # or "github:outfoxxed/hy3" to follow the development branch.
-      # (you may encounter issues if you dont do the same for hyprland)
+    hyprland-plugins = {
+       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
-    }; 
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -20,23 +18,14 @@
     
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager ,hyprland, hy3, ... }:
-  let 
-    system = "x86_64-linux";
-    pkgs = import nixpkgs { 
-       inherit system;
-       config.allowUnfree = true;
-    };
-
-    lib = nixpkgs.lib;
-  in {
+  outputs = inputs@ { self, nixpkgs, nixpkgs-stable, home-manager ,hyprland,hyprland-plugins,  ... }:{
 
   nixosConfigurations = {
-      dkws = lib.nixosSystem rec {
-      inherit system;
+      dkws = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
       specialArgs = {
         inherit hyprland;
-        inherit hy3;
+        inherit inputs;
       };
       modules = [
         ./nixos/configuration.nix
@@ -46,7 +35,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.dk = import ./home-manager/home.nix;
-          home-manager.extraSpecialArgs = specialArgs;
+          home-manager.extraSpecialArgs = inputs;
        }
 
       ];

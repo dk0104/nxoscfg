@@ -1,7 +1,7 @@
 {hyprland, pkgs, ...}:{
   imports = [
-    ./zsh.nix
     ./modules/bundle.nix
+    ./modules/zsh.nix
     hyprland.homeManagerModules.default
   ];
 
@@ -15,6 +15,14 @@
         zoxide
         pavucontrol
         walker
+        hyprlandPlugins.hy3
+        hyprlandPlugins.hyprexpo
+        yq-go
+        ripgrep
+        eza
+        emacs
+        bat
+        archi
   ]);
   programs.home-manager.enable = true;
 }
