@@ -29,6 +29,8 @@
         cheat
         pet
         starship
+        pass
+        xclip
   ]);
   programs.home-manager.enable = true;
 }
