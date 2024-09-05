@@ -9,9 +9,27 @@
       ll = "ls -l";
       v = "nvim";
     };
-
-    history.size = 10000;
-    history.path = "${config.xdg.dataHome}/zsh/history";
-
+    oh-my-zsh = {
+    enable = true;
+    plugins = [ 
+      "git"
+       "thefuck"
+       "alias-finder"
+       "aliases"
+       "colemak"
+       "eza"
+       "fzf"
+       "helm"
+       "tmux"
+       "kubectl"
+       "ssh"
+       "starship"
+        ];
+    #theme = "starship";
+    };
+    history = {
+      size = 10000;
+      path = "${config.xdg.dataHome}/zsh/history";
+    };
   };
 }

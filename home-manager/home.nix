@@ -25,7 +25,10 @@
         archi
         radioboat
         fd
-        
+        silver-searcher
+        cheat
+        pet
+        starship
   ]);
   programs.home-manager.enable = true;
 }
