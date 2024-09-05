@@ -3,12 +3,8 @@
     allowUnfree = true;
     permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
   };
-  programs.hyprland= {
-     enable = true;
-     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-    # make sure to also set the portal package, so that they are in sync
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-  };
+  programs = {
+};
 
   environment.systemPackages = with pkgs; [
     # Desktop apps
@@ -71,7 +67,8 @@
     wl-clipboard
     cliphist
     hyprlandPlugins.hyprexpo
-    hyprlandPlugins.hy3
+    #hyprlandPlugins.hy3
+    walker
    # hyprland
 
     # WMs and stuff

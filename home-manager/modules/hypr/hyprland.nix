@@ -1,9 +1,11 @@
+{config, lib , pkgs ,hy3, ...}:
 {
  wayland.windowManager.hyprland = {
     enable = true;
     xwayland= {
        enable = true;
     };
+    plugins = [ hy3.packages.x86_64-linux.hy3 ];
 
     settings = {
       "$mainMod" = "SUPER";
@@ -11,7 +13,7 @@
 
       monitor = [ 
         "eDP,1920x1080@90,auto,1"
-        "HDMI-A-1,2560x1440@59.95,auto,2,transform, 2"
+        "HDMI-A-1,2560x1440@59.95,auto,1,transform, 2"
      ];
 
       env = [
@@ -123,7 +125,7 @@
             padding = 6;
             render_text = false;
           };
-          autohide = {
+          autotile = {
             enable = true;
             trigger_width = 800;
             trigger_height = 500;

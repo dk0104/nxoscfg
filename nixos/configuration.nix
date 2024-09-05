@@ -42,7 +42,18 @@
     experimental-features = ["nix-command"];
   };
 
- 
+  #Garbage colector
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
+  system.autoUpgrade = {
+   enable = true;
+   channel = "https://nixos.org/channels/nixos-23.05";
+  };
+  
 
 
   services.openssh.enable = true;

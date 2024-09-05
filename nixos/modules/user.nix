@@ -1,6 +1,9 @@
 { pkgs, ... }: {
-  programs.zsh.enable = true;
-
+  programs = {
+    zsh = {
+      enable = true;
+    };
+  };
   users = {
     defaultUserShell = pkgs.zsh;
 
@@ -9,9 +12,8 @@
       description = "Denis Keksel";
       extraGroups = ["audio" "networkmanager" "wheel" "input" "libvirtd" ];
       packages = with pkgs; [
-        zoxide
-        pavucontrol
       ];
+
     };
   };
 
