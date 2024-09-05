@@ -23,6 +23,9 @@
         emacs
         bat
         archi
+        radioboat
+        fd
+        
   ]);
   programs.home-manager.enable = true;
 }

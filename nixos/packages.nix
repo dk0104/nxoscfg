@@ -75,6 +75,7 @@
     seatd
     waybar
     swww
+    sway
 
     # Sound
     pipewire

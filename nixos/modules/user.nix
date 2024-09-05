@@ -1,7 +1,7 @@
 { pkgs, ... }: {
+  programs.zsh.enable = true;
   users = {
     defaultUserShell = pkgs.zsh;
-
     users.dk = {
       isNormalUser = true;
       description = "Denis Keksel";
@@ -12,3 +12,4 @@
   # Enable automatic login for the user.
   services.getty.autologinUser = "dk";
 }
+
