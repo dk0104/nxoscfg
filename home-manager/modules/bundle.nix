@@ -6,5 +6,6 @@
      ./cursor.nix
      ./tmux.nix
      ./zsh.nix
+     ./style.nix
   ];
 }

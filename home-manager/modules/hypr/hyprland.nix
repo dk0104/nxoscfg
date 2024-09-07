@@ -134,8 +134,8 @@
       ];
 
       exec-once = [
-        "swww-daemon "
-        "swww img ~/wallpapers/os/nix-black-4k.png"
+       # "swww-daemon "
+       # "swww img ~/wallpapers/os/nix-black-4k.png"
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"

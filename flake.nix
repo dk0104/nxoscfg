@@ -6,10 +6,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    hyprland-plugins = {
-       url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
+    stylix.url = "github:danth/stylix";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -18,7 +15,7 @@
     
   };
 
-  outputs = inputs@ { self, nixpkgs, nixpkgs-stable, home-manager ,hyprland,hyprland-plugins,  ... }:{
+  outputs = inputs@ { self, nixpkgs, nixpkgs-stable, home-manager ,hyprland, stylix, ... }:{
 
   nixosConfigurations = {
       dkws = nixpkgs.lib.nixosSystem {
@@ -30,6 +27,7 @@
       modules = [
         ./nixos/configuration.nix
         hyprland.nixosModules.default
+        stylix.nixosModules.stylix
 
         home-manager.nixosModules.home-manager{
           home-manager.useGlobalPkgs = true;
