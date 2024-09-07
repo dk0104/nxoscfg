@@ -105,6 +105,8 @@
     noto-fonts
     fira-code-nerdfont
     swaycons
+    iosevka
+    fantasque-sans-mono
     nerdfonts
     noto-fonts-emoji
     twemoji-color-font

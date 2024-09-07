@@ -25,9 +25,9 @@
         inherit inputs;
       };
       modules = [
-        ./nixos/configuration.nix
         hyprland.nixosModules.default
         stylix.nixosModules.stylix
+        ./nixos/configuration.nix
 
         home-manager.nixosModules.home-manager{
           home-manager.useGlobalPkgs = true;

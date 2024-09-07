@@ -23,6 +23,7 @@
        "kubectl"
        "ssh"
        "starship"
+       "emacs"
         ];
     #theme = "starship";
     };

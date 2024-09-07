@@ -5,8 +5,10 @@
     xwayland= {
        enable = true;
     };
+    home.file.".config/hypr/mocha.conf".source = ./hyprthemes/mocha.conf;
 
     settings = {
+      "source"="~/.config/hypr/mocha.conf";
       "$mainMod" = "SUPER";
       "$launcher" = "walker";
 
@@ -134,8 +136,8 @@
       ];
 
       exec-once = [
-       # "swww-daemon "
-       # "swww img ~/wallpapers/os/nix-black-4k.png"
+        "swww-daemon "
+        "swww img ~/wallpapers/os/nix-black-4k.png"
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
@@ -150,7 +152,7 @@
         "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
 
         "$mainMod, Return, exec, alacritty"
-        "$mainMod SHIFT,Return, exec, alacritty --class AllacrittyFloating"
+        "$mainMod SHIFT,Return, exec, alacritty --class AlacrittyFloating"
         "$mainMod, grave, exec, $launcher"
 #        "$mainMod CTRL,grave, hyprexpo:expo, toggle"
         "$mainMod, Q, killactive,"
