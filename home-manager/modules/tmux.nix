@@ -61,7 +61,7 @@ in {
       setw -g aggressive-resize on
       set -g status-position top
       bind r source-file ~/.config/tmux/tmux.conf
-      TMUX_FZF_LAUNCH_KEY="C-z"
+      TMUX_FZF_LAUNCH_KEY="z"
 
     '';
   };
