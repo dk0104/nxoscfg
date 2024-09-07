@@ -1,11 +1,11 @@
 {config, lib , pkgs ,inputs, ...}:
 {
+  home.file.".config/hypr/mocha.conf".source = ./hyprthemes/mocha.conf;
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland= {
        enable = true;
     };
-    home.file.".config/hypr/mocha.conf".source = ./hyprthemes/mocha.conf;
 
     settings = {
       "source"="~/.config/hypr/mocha.conf";
@@ -63,8 +63,10 @@
         gaps_in = 5;
         gaps_out = 20;
         border_size = 3;
-        "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-        "col.inactive_border" = "rgba(595959aa)";
+        col.active_border = "$pink";
+        col.inactive_border = "$surface0";
+        col.group_border_active = "$flamingo";
+        col.group_border = "$surface0";
 
         layout = "dwindle";
         #no_cursor_warps = false;
@@ -83,7 +85,8 @@
         drop_shadow = true;
         shadow_range = 4;
         shadow_render_power = 3;
-        "col.shadow" = "rgba(1a1a1aee)";
+        col.shadow = "$surface0";
+        col.shadow_inactive = "$surface0";
       };
 
       animations = {

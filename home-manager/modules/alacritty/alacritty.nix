@@ -1,7 +1,7 @@
 {
+    home.file.".config/alacritty/catppucin-mocha.toml".source = ./catppuccin-mocha.toml;
     programs.alacritty = {
       enable = true;
-      home.file.".config/alacritty/catppucin-mocha.toml".source = ./catppuccin-mocha.toml;
       settings = {
         import = [
           "~/.config/alacritty/catppuccin-mocha.toml"

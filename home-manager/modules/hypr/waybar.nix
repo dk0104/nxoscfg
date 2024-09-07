@@ -4,7 +4,7 @@
     recursive = true;
     executable = true;
   };
-  home.file.".config/waybar/mocha.css".source = ./hyprthemes/mocha.css
+  home.file.".config/waybar/mocha.css".source = ./hyprthemes/mocha.css;
 
 
 
@@ -131,11 +131,11 @@
           spacing = 0;
         };
 
-       custom/power = {
+       "custom/power" = {
         tooltip = false;
         on-click = "wlogout &";
         format = "襤";
-    }
+       };
 
       };
     };
