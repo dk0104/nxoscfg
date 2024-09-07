@@ -54,6 +54,7 @@
     # HW and drives
     bluez
     bluez-tools
+    bluetuith
 
     # GUI utils
     feh
@@ -69,6 +70,10 @@
     hyprlandPlugins.hyprexpo
     #hyprlandPlugins.hy3
     walker
+    nwg-drawer
+    nwg-displays
+    nwg-dock-hyprland
+    nwg-look
    # hyprland
 
     # WMs and stuff
@@ -88,6 +93,7 @@
     glaxnimate
 
     # Other
+    xfce.xfce4-power-manager
     home-manager
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum

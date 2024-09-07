@@ -13,6 +13,7 @@
       monitor = [ 
         "eDP,1920x1080@90,auto,1"
         "HDMI-A-1,2560x1440@59.95,auto,1,transform, 2"
+        "desc:Samsung Electric Company LC49G95T H4ZR300052,preferd,auto,1"
      ];
 
      # plugin = {
@@ -36,6 +37,7 @@
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/screens"
       ];
+
 
       debug = {
         disable_logs = false;
@@ -137,6 +139,11 @@
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
+        "nm-applet"
+        "emacs --daemon"
+        "bluemann-applet"
+        "hypridle"
+        "nwg-dock-hyprland -i 24"
       ];
 
       bind = [

@@ -1,7 +1,6 @@
 {hyprland, pkgs, ...}:{
   imports = [
     ./modules/bundle.nix
-    ./modules/zsh.nix
     hyprland.homeManagerModules.default
   ];
 
@@ -17,6 +16,8 @@
         walker
         hyprlandPlugins.hy3
         hyprlandPlugins.hyprexpo
+        hyprlock
+        hypridle
         yq-go
         ripgrep
         eza
@@ -31,6 +32,13 @@
         starship
         pass
         xclip
+        mplayer
+        vlc
+        blueman
+        networkmanagerapplet
+        papirus-icon-theme
+        nwg-launchers
+        libtool
   ]);
   programs.home-manager.enable = true;
 }
