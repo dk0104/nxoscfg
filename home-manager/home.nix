@@ -29,6 +29,7 @@
         cheat
         pet
         starship
+        zoxide
         pass
         xclip
         mplayer
