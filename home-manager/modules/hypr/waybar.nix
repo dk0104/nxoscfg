@@ -20,16 +20,16 @@
 
   programs.waybar = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.waybar-hyprland;
+    # package = inputs.hyprland.packages.${pkgs.system}.waybar-hyprland;
     settings = {
       mainBar = {
         layer = "top";
         position = "left";
-        modules-left = ["wlr/workspaces"];
+        modules-left = ["clock" "workspaces"];
         modules-center = [];
-        modules-right = ["pulseaudio" "network" "backlight" "battery" "clock" "tray" "custom/power"];
+        modules-right = ["pulseaudio" "network" "backlight" "battery"  "tray" "custom/power"];
 
-        "wlr/workspaces" = {
+        "workspaces" = {
           disable-scroll = true;
           sort-by-name = true;
           format = "{icon}";
