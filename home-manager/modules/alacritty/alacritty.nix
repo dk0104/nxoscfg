@@ -1,5 +1,5 @@
 {
-    home.file.".config/alacritty/catppucin-mocha.toml".source = ./catppuccin-mocha.toml;
+    home.file.".config/alacritty/catppuccin-mocha.toml".source = ./catppuccin-mocha.toml;
     programs.alacritty = {
       enable = true;
       settings = {
@@ -14,10 +14,7 @@
         font = {
           size = 11.0;
           normal = {
-            family = "Iosevka Term";
-          };
-          italic = {
-            family = "Iosevka Slab";
+            family = "JetBrains Mono ";
           };
         };
     };

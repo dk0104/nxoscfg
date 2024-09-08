@@ -63,10 +63,10 @@
         gaps_in = 5;
         gaps_out = 20;
         border_size = 3;
-        col.active_border = "$pink";
-        col.inactive_border = "$surface0";
-        col.group_border_active = "$flamingo";
-        col.group_border = "$surface0";
+        "col.active_border" = "$sky";
+        "col.inactive_border" = "$surface0";
+        #"col.group_border_active" = "$flamingo";
+        #"col.group_border" = "$surface0";
 
         layout = "dwindle";
         #no_cursor_warps = false;
@@ -85,8 +85,8 @@
         drop_shadow = true;
         shadow_range = 4;
         shadow_render_power = 3;
-        col.shadow = "$surface0";
-        col.shadow_inactive = "$surface0";
+        "col.shadow" = "$surface0";
+        "col.shadow_inactive" = "$surface0";
       };
 
       animations = {
@@ -148,7 +148,7 @@
         "emacs --daemon"
         "bluemann-applet"
         "hypridle"
-        "nwg-dock-hyprland -i 24"
+        "nwg-dock-hyprland -d  -i 18"
       ];
 
       bind = [

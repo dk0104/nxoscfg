@@ -39,6 +39,7 @@
         papirus-icon-theme
         nwg-launchers
         libtool
+        portal
   ]);
   programs.home-manager.enable = true;
 }
