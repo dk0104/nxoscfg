@@ -11,7 +11,6 @@
   };
 
   home.packages = (with pkgs; [
-        zoxide
         pavucontrol
         walker
         hyprlandPlugins.hy3

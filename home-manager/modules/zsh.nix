@@ -9,6 +9,9 @@
       ll = "ls -l";
       v = "nvim";
     };
+    initExtra = ''
+     eval "$(zoxide init zsh --cmd cd)"
+    '';
     oh-my-zsh = {
     enable = true;
     plugins = [ 
@@ -24,6 +27,11 @@
        "ssh"
        "starship"
        "emacs"
+       "helm"
+       "kubectl"
+       "pass"
+       "taskwarrior"
+       "tmuxinator"
         ];
     #theme = "starship";
     };
