@@ -20,20 +20,27 @@
 
   programs.waybar = {
     enable = true;
-    #package = hyprland.packages.${pkgs.system}.waybar-hyprland;
+    # package = hyprland.packages.${pkgs.system}.waybar-hyprland;
     settings = {
       mainBar = {
         layer = "top";
         position = "left";
-        modules-left = ["clock" "workspaces"];
+        modules-left = ["clock" "hyplrland/workspaces" "hyprland/language"];
         modules-center = [];
         modules-right = ["pulseaudio" "network" "backlight" "battery"  "tray" "custom/power"];
 
-        "workspaces" = {
+        "hyprland/workspaces" = {
           disable-scroll = true;
           sort-by-name = true;
           format = "{icon}";
           format-icons = {default = "";};
+        };
+
+        "hyprland/language" = {
+          format-en = "US";
+          format-ru = "RU";
+	        min-length = 5;
+	        tooltip = false;
         };
 
         pulseaudio = {
@@ -75,7 +82,7 @@
 
         "custom/power" = {
           tooltip = false;
-          on-click = "powermenu";
+          on-click = "wlogout --protocol layer-shell";
           format = "󰐥";
         };
 
@@ -83,13 +90,13 @@
           tooltip-format = ''
             <big>{:%Y %B}</big>
             <tt><small>{calendar}</small></tt>'';
-          format-alt = ''
-             {:%d
-             %m
-            %Y}'';
-          format = ''
-            {:%H
-            %M}'';
+            format-alt = ''
+              {:%d
+              %m
+              %Y}'';
+              format = ''
+                {:%H
+                %M}'';
         };
 
         tray = {

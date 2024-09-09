@@ -19,6 +19,7 @@
       hyprlandPlugins.hy3
       hyprlandPlugins.hyprexpo
       hyprlock
+      wlogout
       nwg-displays
       nwg-dock-hyprland
       nwg-drawer

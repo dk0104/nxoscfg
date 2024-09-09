@@ -42,12 +42,13 @@ window#waybar {
 #backlight,
 #clock,
 #battery,
+#language,
 #pulseaudio,
 #custom-lock,
 #custom-power {
   background-color: @surface0;
   margin: 7px 3px 0px 7px;
-  padding: 10px 5px 10px 5px;
+  padding: 5px 2px 5px 2px;
   border-radius: 1rem;
 }
 
@@ -97,6 +98,7 @@ tooltip {
     background: @base;
     border: 1px solid @pink;
 }
+
 
 tooltip label {
     color: @text;
