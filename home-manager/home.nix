@@ -1,18 +1,14 @@
-{hyprland, pkgs, ...}:{
+{ pkgs, hyprland,lib, ...}:{
   imports = [
     ./modules/bundle.nix
-    inputs.hyperland.homeManager.default
+    hyprland.homeManagerModules.default
   ];
 
   home = {
     username = "dk";
-    homeDirectory = lib.mkForce "/home/dk";
-    packages = pkgs.callPackage ./packages.nix {};
+    homeDirectory = lib.mkDefault "/home/dk";
     stateVersion = "24.11";
     packages = (with pkgs; [
-      # app and package management
-      home-manager
-
       # network and io
       blueman
       bluetuith
@@ -50,6 +46,7 @@
       flameshot
       imv
       screenkey
+      swt
       simplescreenrecorder
 
       # Editor
@@ -108,6 +105,7 @@
       zip
       zoxide
       zram-generator
-    ]
-    );};
+    ]);
+  };
+  programs.home-manager.enable = true;
 }
