@@ -6,6 +6,8 @@
      ./cursor.nix
      ./tmux.nix
      ./zsh.nix
+     ./mako.nix
+     ./bat.nix
      #./style.nix
   ];
 }
