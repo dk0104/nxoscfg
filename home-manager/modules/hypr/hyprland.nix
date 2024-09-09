@@ -1,6 +1,7 @@
 {config, lib , pkgs , ...}:
 {
   home.file.".config/hypr/mocha.conf".source = ./hyprthemes/mocha.conf;
+  home.file.".config/nwg-dock-hyprland/style.css".source = ./hyprthemes/dock.css;
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland= {
@@ -144,10 +145,9 @@
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
         "nm-applet"
-        "emacs --daemon"
         "bluemann-applet"
         "hypridle"
-        "nwg-dock-hyprland -p left  -i 18"
+        "nwg-dock-hyprland -p left  -i 18 -r "
       ];
 
       bind = [
@@ -156,7 +156,7 @@
         "$mainMod, Return, exec, alacritty"
         "$mainMod SHIFT,Return, exec, alacritty --class AlacrittyFloating"
         "$mainMod, grave, exec, $launcher"
-#        "$mainMod CTRL,grave, hyprexpo:expo, toggle"
+        "$mainMod SHIFT,grave,exec, nwg-dock-hyprland -p left  -i 18 -r"
         "$mainMod, Q, killactive,"
         "$mainMod CTRL, M, exit,"
         "$mainMod, F, togglefloating,"

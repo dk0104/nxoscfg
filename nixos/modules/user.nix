@@ -13,5 +13,9 @@
 
   # Enable automatic login for the user.
   services.getty.autologinUser = "dk";
+  services.emacs = {
+    enable = true;
+    package = pkgs.emacs;
+  };
 
 }
