@@ -284,7 +284,42 @@
         "catppuccin-toolbox": "catppuccin-toolbox",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
+<<<<<<< HEAD
         "nixpkgs": "nixpkgs_3"
+=======
+        "nixpkgs": "nixpkgs_2",
+        "stylix": "stylix"
+      }
+    },
+    "stylix": {
+      "inputs": {
+        "base16": "base16",
+        "base16-fish": "base16-fish",
+        "base16-foot": "base16-foot",
+        "base16-helix": "base16-helix",
+        "base16-kitty": "base16-kitty",
+        "base16-tmux": "base16-tmux",
+        "base16-vim": "base16-vim",
+        "flake-compat": "flake-compat",
+        "flake-utils": "flake-utils",
+        "gnome-shell": "gnome-shell",
+        "home-manager": "home-manager_2",
+        "nixpkgs": "nixpkgs_3",
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1725290973,
+        "narHash": "sha256-+jwXF9KI0HfvDgpsoJGvOdfOGGSKOrID1wQB79zjUbo=",
+        "owner": "danth",
+        "repo": "stylix",
+        "rev": "ef81ad9e85e60420cc83d4642619c14b57139d33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "danth",
+        "repo": "stylix",
+        "type": "github"
+>>>>>>> 85e0b91 (packages setup changed)
       }
     },
     "systems": {

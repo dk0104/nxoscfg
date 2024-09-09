@@ -7,7 +7,11 @@
 };
 
   environment.systemPackages = with pkgs; [
-    # Coding stuff
+    # system
+    home-manager
+    git
+
+    # Coding
     (python3.withPackages (ps: with ps; [ requests ]))
     cmake
     gcc
@@ -18,7 +22,6 @@
     # HW and drives
     bluez
     bluez-tools
-    bluetuith
 
     # Wayland stuff
     cliphist
@@ -29,7 +32,7 @@
     pipewire
     pulseaudio
 
-    # GPU stuff 
+    # GPU stuff
     amdvlk
     glaxnimate
     rocm-opencl-icd
