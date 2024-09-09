@@ -47,6 +47,7 @@
       imv
       screenkey
       swt
+      jameica
       simplescreenrecorder
 
       # Editor
