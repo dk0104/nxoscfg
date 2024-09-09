@@ -8,6 +8,7 @@
      ./zsh.nix
      ./mako.nix
      ./bat.nix
+     ./starship.nix
      #./style.nix
   ];
 }
