@@ -1,4 +1,4 @@
-{config, lib , pkgs ,inputs, ...}:
+{config, lib , pkgs , ...}:
 {
   home.file.".config/hypr/mocha.conf".source = ./hyprthemes/mocha.conf;
   wayland.windowManager.hyprland = {
@@ -93,7 +93,6 @@
         enabled = true;
 
         bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
-        # bezier = "myBezier, 0.33, 0.82, 0.9, -0.08";
 
         animation = [
           "windows,     1, 7,  myBezier"
@@ -148,7 +147,7 @@
         "emacs --daemon"
         "bluemann-applet"
         "hypridle"
-        "nwg-dock-hyprland -d  -i 18"
+        "nwg-dock-hyprland -p left  -i 18"
       ];
 
       bind = [

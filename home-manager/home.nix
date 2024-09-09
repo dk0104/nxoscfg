@@ -1,45 +1,18 @@
-{hyprland, pkgs, ...}:{
+{pkgs,inputs,config,lib, ...}:{
   imports = [
     ./modules/bundle.nix
-    hyprland.homeManagerModules.default
+    inputs.hyperland.homeManager.default
   ];
 
   home = {
     username = "dk";
-    homeDirectory = "/home/dk";
+    homeDirectory = lib.mkForce "/home/dk";
+    packages = pkgs.callPackage ./packages.nix {};
     stateVersion = "24.11";
   };
 
-  home.packages = (with pkgs; [
-        pavucontrol
-        walker
-        hyprlandPlugins.hy3
-        hyprlandPlugins.hyprexpo
-        hyprlock
-        hypridle
-        yq-go
-        ripgrep
-        eza
-        emacs
-        bat
-        archi
-        radioboat
-        fd
-        silver-searcher
-        cheat
-        pet
-        starship
-        zoxide
-        pass
-        xclip
-        mplayer
-        vlc
-        blueman
-        networkmanagerapplet
-        papirus-icon-theme
-        nwg-launchers
-        libtool
-        portal
-  ]);
+
+
+ _module.args = { inherit inputs; };
   programs.home-manager.enable = true;
 }
