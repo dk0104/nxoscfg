@@ -107,6 +107,9 @@
       zip
       zoxide
       zram-generator
+
+      # Java
+      jre-minimal
     ]);
   };
   programs.home-manager.enable = true;

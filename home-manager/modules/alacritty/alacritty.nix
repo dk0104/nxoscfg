@@ -6,15 +6,15 @@
         import = [
           "~/.config/alacritty/catppuccin-mocha.toml"
         ];
-        window.opacity = 0.95;
+        window.opacity = 0.90;
         env = {
           TERM = "xterm-256color";
         };
 
         font = {
-          size = 11.0;
+          size = 10.0;
           normal = {
-            family = "JetBrains Mono ";
+            family = "Hack Nerd Font";
           };
         };
     };
