@@ -135,12 +135,12 @@
         "float, ^(mpv)$"
       ];
       windowrulev2 = [
-        "float, class:^(AlacrittyFloating)$"
+        "float, class:^(FootFloating)$"
       ];
 
       exec-once = [
         "swww-daemon "
-        "swww img ~/wallpapers/os/nix-black-4k.png"
+        "swww img ~/wallpapers/landscapes/forrest.png"
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
@@ -148,13 +148,14 @@
         "bluemann-applet"
         "hypridle"
         "nwg-dock-hyprland -p left  -i 18  "
+        "foot --server"
       ];
 
       bind = [
         "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
 
-        "$mainMod, Return, exec, alacritty"
-        "$mainMod SHIFT,Return, exec, alacritty --class AlacrittyFloating"
+        "$mainMod, Return, exec, footclient"
+        "$mainMod SHIFT,Return, exec, footclient --class FootFloating"
         "$mainMod, grave, exec, $launcher"
         "$mainMod SHIFT,grave,exec, nwggrid "
         "$mainMod, Q, killactive,"
