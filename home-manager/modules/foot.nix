@@ -13,7 +13,6 @@
         font-bold-italic = "Hack Nerd Font Mono:size=8:style=Bold Italic";
       };
       mouse.hide-when-typing = "yes";
-      colors.alpha=0.7;
     };
   };
   xdg.configFile."foot/mocha.ini".text =
