@@ -37,8 +37,11 @@
       audacity
       brave
       mako
+      foot
       obsidian
       wofi
+      xfce.thunar
+      xfce.thunar-volman
 
       # GUI utils
       archi
@@ -46,14 +49,14 @@
       feh
       flameshot
       imv
-      screenkey
-      swt
       jameica
+      screenkey
       simplescreenrecorder
 
       # Editor
       emacs
       vscode
+      eclipses.eclipse-sdk
 
       # Audio and Media tools
       pavucontrol
@@ -104,12 +107,16 @@
       xclip
       yazi
       yq-go
+      zathura
       zip
       zoxide
       zram-generator
 
+      # virtualisation
+      virtualbox
+
       # Java
-      jre-minimal
+      swt
     ]);
   };
   programs.home-manager.enable = true;

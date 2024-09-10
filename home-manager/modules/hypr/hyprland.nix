@@ -156,7 +156,7 @@
         "$mainMod, Return, exec, alacritty"
         "$mainMod SHIFT,Return, exec, alacritty --class AlacrittyFloating"
         "$mainMod, grave, exec, $launcher"
-        #"$mainMod SHIFT,grave,exec, nwg-dock-hyprland -p left  -i 18 -r"
+        "$mainMod SHIFT,grave,exec, nwggrid "
         "$mainMod, Q, killactive,"
         "$mainMod CTRL, M, exit,"
         "$mainMod, F, togglefloating,"
