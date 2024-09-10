@@ -9,6 +9,7 @@
      ./mako.nix
      ./bat.nix
      ./starship.nix
+     ./foot.nix
      #./style.nix
   ];
 }
