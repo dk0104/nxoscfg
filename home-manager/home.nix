@@ -4,6 +4,13 @@
     hyprland.homeManagerModules.default
   ];
 
+  gtk = {
+        enable = true;
+        theme = {
+              name = "Catppuccin";
+        };
+  };
+
   home = {
     username = "dk";
     homeDirectory = lib.mkDefault "/home/dk";
@@ -70,6 +77,7 @@
 
       # Themes
       papirus-icon-theme
+      catppuccin-gtk
 
       # CLI utils
       bat

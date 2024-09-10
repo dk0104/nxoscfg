@@ -187,7 +187,7 @@
         "$mainMod SHIFT, E,  swapwindow, d"
 
         # Moving to special workspace
-        "$mainMod CTRL, S , movetoworkspace,special"
+        "$mainMod CTRL, S , movetoworkspace,special:scratch"
         "$mainMod ,S,togglespecialworkspace"
 
         # Window resizing                     X  Y

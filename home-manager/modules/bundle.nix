@@ -10,6 +10,7 @@
      ./bat.nix
      ./starship.nix
      ./foot.nix
+     ./gtk.nix
      #./style.nix
   ];
 }
