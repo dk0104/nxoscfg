@@ -12,7 +12,6 @@
     enable = true;
     defaultEditor = true;
     colorschemes.catppuccin.enable = true;
-    byteCompileLua.enable = true;
     viAlias = true;
     vimAlias = true;
     luaLoader.enable = true;

@@ -11,6 +11,6 @@
      ./starship.nix
      ./tmux.nix
      ./zsh.nix
-     #./nixvim/nixvim.nix
+     ./nixvim/nixvim.nix
   ];
 }
