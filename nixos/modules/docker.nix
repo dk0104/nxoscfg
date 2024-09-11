@@ -1,4 +1,8 @@
-{config,pkgs, ...}:
 {
-  programs.docker.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    storageDriver = "btrfs";
+    rootless.enable = true;
+    rootless.setSocketVariable = true;
+  };
 }

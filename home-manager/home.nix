@@ -20,6 +20,7 @@
       helm-docs
       helm-dashboard
       minikube
+      # docker
 
       # wm
       hypridle

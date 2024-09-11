@@ -17,5 +17,6 @@
     enable = true;
     package = pkgs.emacs;
   };
+  #virtualisation.docker.enable = true;
 
 }
