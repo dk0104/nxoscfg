@@ -1,11 +1,11 @@
-{ pkgs, hyprland,lib, ...}:{
+{ pkgs, inputs,lib, ...}:{
   imports = [
     ./modules/bundle.nix
-    hyprland.homeManagerModules.default
+    inputs.hyprland.homeManagerModules.default
   ];
 
   home = {
-    username = "dk";
+    username = lib.mkDefault "dk";
     homeDirectory = lib.mkDefault "/home/dk";
     stateVersion = "24.11";
     packages = (with pkgs; [
@@ -82,9 +82,11 @@
 
       # CLI utils
       bat
-      cava
+      bottom
       brightnessctl
+      cava
       cheat
+      dysk
       eza
       fastfetch
       fd
@@ -103,13 +105,15 @@
       nix-index
       openssl
       pass
-      passExtensions.pass-otp
       pass-git-helper
+      passExtensions.pass-otp
       pet
       portal
+      procs
       ripgrep
       scrot
       silver-searcher
+      sshs
       starship
       tmux
       tree
@@ -133,5 +137,8 @@
       jdk21
     ]);
   };
-  programs.home-manager.enable = true;
+  programs = {
+    home-manager.enable = true;
+    nix-index-database.comma.enable = true;
+  };
 }

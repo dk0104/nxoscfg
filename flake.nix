@@ -11,30 +11,35 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
-  outputs = inputs@ { self, nixpkgs, home-manager ,hyprland,  ... }:{
+  outputs = inputs@ { self, nixpkgs, home-manager ,  ... }:{
 
-  nixosConfigurations = {
+    nixosConfigurations = {
       dkws = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs = {
-        inherit hyprland;
-        inherit inputs;
+        system = "x86_64-linux";
+        specialArgs = {
+          inherit inputs;
+        };
+        modules = [
+          inputs.hyprland.nixosModules.default
+          ./nixos/configuration.nix
+          inputs.nixvim.nixosModules.nixvim
+
+          home-manager.nixosModules.home-manager{
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.dk = import ./home-manager/home.nix;
+            home-manager.extraSpecialArgs = inputs;
+          }
+
+        ];
       };
-      modules = [
-        hyprland.nixosModules.default
-        ./nixos/configuration.nix
-
-        home-manager.nixosModules.home-manager{
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.dk = import ./home-manager/home.nix;
-          home-manager.extraSpecialArgs = inputs;
-       }
-
-      ];
     };
   };
- };
 }
