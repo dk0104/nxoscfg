@@ -20,7 +20,7 @@
       helm-docs
       helm-dashboard
       minikube
-      # docker
+      efitools
 
       # wm
       hypridle
@@ -61,10 +61,11 @@
       screenkey
       simplescreenrecorder
 
-      # Editor
+      # Editor and dev tools
       emacs
       vscode
       eclipses.eclipse-sdk
+      dbeaver-bin
 
       # Audio and Media tools
       pavucontrol
@@ -91,6 +92,7 @@
       file
       fzf
       git
+      gnupg
       htop
       lazygit
       libtool
@@ -127,6 +129,8 @@
 
       # Java
       swt
+      maven
+      jdk21
     ]);
   };
   programs.home-manager.enable = true;
