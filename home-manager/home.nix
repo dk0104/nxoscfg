@@ -1,7 +1,6 @@
 { pkgs, inputs,lib, ...}:{
   imports = [
     ./modules/bundle.nix
-    inputs.hyprland.homeManagerModules.default
   ];
 
   home = {
@@ -139,6 +138,5 @@
   };
   programs = {
     home-manager.enable = true;
-    nix-index-database.comma.enable = true;
   };
 }

@@ -1,7 +1,7 @@
 {
   imports = [
      ./alacritty/alacritty.nix
-     ./bat.nix
+     #./bat.nix
      ./cursor.nix
      ./foot.nix
      ./gtk.nix
@@ -11,6 +11,6 @@
      ./starship.nix
      ./tmux.nix
      ./zsh.nix
-     ./nixvim/nixvim.nix
+     #./nixvim/nixvim.nix
   ];
 }
