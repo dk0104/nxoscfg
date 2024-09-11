@@ -100,6 +100,8 @@
       nix-index
       openssl
       pass
+      passExtensions.pass-otp
+      pass-git-helper
       pet
       portal
       ripgrep
