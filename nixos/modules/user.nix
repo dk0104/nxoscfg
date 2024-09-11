@@ -6,7 +6,7 @@
     users.dk = {
       isNormalUser = true;
       description = "Denis Keksel";
-      extraGroups = ["audio" "networkmanager" "wheel" "input" "libvirtd" ];
+      extraGroups = ["audio" "networkmanager" "wheel" "input" "libvirtd" "docker" ];
       group = "dk";
     };
   };

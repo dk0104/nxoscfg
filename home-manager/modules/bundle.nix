@@ -11,6 +11,7 @@
      ./starship.nix
      ./foot.nix
      ./gtk.nix
+     ./docker.nix
      #./style.nix
   ];
 }

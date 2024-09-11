@@ -19,7 +19,7 @@
       kubernetes-helm
       helm-docs
       helm-dashboard
-
+      minikube
 
       # wm
       hypridle
