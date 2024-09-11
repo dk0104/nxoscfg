@@ -25,7 +25,7 @@
       mainBar = {
         layer = "top";
         position = "left";
-        modules-left = ["clock" "hyplrland/workspaces" "hyprland/language"];
+        modules-left = ["hyprland/language" "clock"];
         modules-center = [];
         modules-right = ["pulseaudio" "network" "backlight" "battery"  "tray" "custom/power"];
 
@@ -39,7 +39,7 @@
         "hyprland/language" = {
           format-en = "US";
           format-ru = "RU";
-	        min-length = 5;
+	        min-length = 2;
 	        tooltip = false;
         };
 
