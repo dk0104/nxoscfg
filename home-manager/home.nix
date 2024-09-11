@@ -4,13 +4,6 @@
     hyprland.homeManagerModules.default
   ];
 
-  gtk = {
-        enable = true;
-        theme = {
-              name = "Catppuccin";
-        };
-  };
-
   home = {
     username = "dk";
     homeDirectory = lib.mkDefault "/home/dk";
@@ -20,6 +13,13 @@
       blueman
       bluetuith
       networkmanagerapplet
+
+      # DevOps
+      kubectl
+      kubernetes-helm
+      helm-docs
+      helm-dashboard
+
 
       # wm
       hypridle
@@ -76,8 +76,7 @@
       telegram-desktop
 
       # Themes
-      papirus-icon-theme
-      catppuccin-gtk
+      # papirus-icon-theme
 
       # CLI utils
       bat
