@@ -148,6 +148,7 @@
             "hypridle"
             "nwg-dock-hyprland -p left  -i 18  "
             "foot --server"
+            "nwggrid-server"
           ];
 
           bind = [

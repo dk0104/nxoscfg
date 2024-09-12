@@ -27,7 +27,7 @@
         position = "left";
         modules-left = ["hyprland/language" "clock"];
         modules-center = [];
-        modules-right = ["pulseaudio" "network" "backlight" "battery"  "tray" "custom/power"];
+        modules-right = ["pulseaudio" "backlight" "battery"  "tray" "custom/power"];
 
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -49,6 +49,7 @@
           format-icons = ["" "" ""];
           tooltip = true;
           tooltip-format = "{volume}%";
+          on-click = "pavucontrol";
         };
 
         network = {

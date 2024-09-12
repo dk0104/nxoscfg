@@ -11,20 +11,20 @@
       # network and io
       blueman
       bluetuith
+      networkmanager-openconnect
       networkmanagerapplet
+      openconnect
 
       # DevOps
+      efitools
+      helm-dashboard
+      helm-docs
       kubectl
       kubernetes-helm
-      helm-docs
-      helm-dashboard
       minikube
-      efitools
 
       # wm
       hypridle
-      hyprlandPlugins.hy3
-      hyprlandPlugins.hyprexpo
       hyprlock
       wlogout
       nwg-displays
@@ -46,6 +46,7 @@
       mako
       foot
       obsidian
+      openconnect
       wofi
       xfce.thunar
       xfce.thunar-volman
@@ -77,7 +78,6 @@
       telegram-desktop
 
       # Themes
-      # papirus-icon-theme
 
       # CLI utils
       bat
