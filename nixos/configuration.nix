@@ -69,6 +69,19 @@
         channel = "https://nixos.org/channels/nixos-23.05";
       };
 
+#xdg
+    xdg.portal = {
+      enable = true;
+      xdgOpenUsePortal = false;
+      #gtkUsePortal = true;
+      extraPortals = with pkgs; [
+        # xdg-desktop-portal-gtk
+        xdg-desktop-portal-hyprland
+        #xdg-desktop-portal-wlr
+      ];
+      #wlr.enable = true;
+    };
+
 
 
       services.openssh.enable = true;

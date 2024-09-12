@@ -26,7 +26,7 @@
       # wm
       hypridle
       hyprlock
-      wlogout
+      lxappearance
       nwg-displays
       nwg-dock-hyprland
       nwg-drawer
@@ -37,6 +37,7 @@
       swww
       walker
       waybar
+      wlogout
       xfce.xfce4-power-manager
 
       # Desktop apps
@@ -47,9 +48,11 @@
       foot
       obsidian
       openconnect
+      pcmanfm
       wofi
       xfce.thunar
       xfce.thunar-volman
+      libsForQt5.polkit-kde-agent
 
       # GUI utils
       archi
@@ -73,6 +76,7 @@
       radioboat
       mplayer
       vlc
+      wireplumber
 
       # Messenger and chat
       telegram-desktop
@@ -146,7 +150,7 @@
     enable = true;
     defaultCacheTtl = 34560000;
     maxCacheTtl = 34560000;
-    pinentryPackage = pkgs.pinentry-curses;
+    pinentryPackage = lib.mkForce pkgs.pinentry-curses;
     enableScDaemon = false;
   };
 }

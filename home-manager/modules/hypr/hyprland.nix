@@ -4,7 +4,9 @@
   home.file.".config/nwg-dock-hyprland/style.css".source = ./hyprthemes/dock.css;
   wayland.windowManager.hyprland = {
     enable = true;
-    xwayland.enable = true;
+    xwayland = {
+     enable = true;
+     };
 
 
     settings = {
@@ -149,6 +151,8 @@
             "nwg-dock-hyprland -p left  -i 18  "
             "foot --server"
             "nwggrid-server"
+            "exec-once=systemctl --user start plasma-polkit-agent"
+            "exec-once = dconf write /org/gnome/desktop/interface/gtk-theme 'Catppuccin-GTK-Dark'"
           ];
 
           bind = [

@@ -7,5 +7,6 @@
     ./sound.nix
     ./bluetooth.nix
     ./docker.nix
+    ./greetd.nix
   ];
 }

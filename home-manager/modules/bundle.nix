@@ -2,7 +2,7 @@
   imports = [
      ./alacritty/alacritty.nix
      #./bat.nix
-     ./cursor.nix
+     #./cursor.nix
      ./foot.nix
      ./gtk.nix
      ./hypr/hyprland.nix
