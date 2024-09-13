@@ -152,7 +152,6 @@
             "foot --server"
             "nwggrid-server"
             "exec-once=systemctl --user start plasma-polkit-agent"
-            "exec-once = dconf write /org/gnome/desktop/interface/gtk-theme 'Catppuccin-GTK-Dark'"
           ];
 
           bind = [
