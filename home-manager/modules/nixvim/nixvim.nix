@@ -3,7 +3,7 @@
 {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
-    ./plugins/harpoon.nix
+    ./plugins/bundle.nix
     ./options.nix
     ./keymappings.nix
   ];
