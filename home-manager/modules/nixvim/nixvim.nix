@@ -6,6 +6,7 @@
     ./plugins/bundle.nix
     ./options.nix
     ./keymappings.nix
+    ./autocomand.nix
   ];
 
   home.shellAliases.v = "nvim";
