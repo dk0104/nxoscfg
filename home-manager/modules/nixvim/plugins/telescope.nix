@@ -3,7 +3,7 @@
     plugins.telescope = {
       enable = true;
 
-      keypmaps = {
+      keymaps = {
        # Find files using Telescope command-line sugar.
         "<leader>ff" = "find_files";
         "<leader>fg" = "live_grep";
@@ -22,6 +22,7 @@
           "^.mypy_cache/"
           "^.git/"
         ];
+        set_env.COLORTERM = "truecolor";
       };
     };
   };
