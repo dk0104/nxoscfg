@@ -14,6 +14,7 @@
       "$mainMod" = "SUPER";
       "$launcher" = "walker";
 
+
       monitor = [ 
       "eDP,1920x1080@90,auto,1"
       "HDMI-A-1,2560x1440@59.95,auto,1,transform, 2"
@@ -37,7 +38,7 @@
             "XDG_CURRENT_DESKTOP,Hyprland"
             "XDG_SESSION_TYPE,wayland"
             "XDG_SESSION_DESKTOP,Hyprland"
-            "XCURSOR_SIZE,36"
+            "XCURSOR_SIZE,24"
             "QT_QPA_PLATFORM,wayland"
             "XDG_SCREENSHOTS_DIR,~/screens"
           ];

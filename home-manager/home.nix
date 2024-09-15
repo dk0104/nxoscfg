@@ -43,6 +43,7 @@
       # Desktop apps
       alacritty
       audacity
+      firefox
       brave
       mako
       foot
