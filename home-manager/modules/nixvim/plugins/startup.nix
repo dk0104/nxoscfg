@@ -51,23 +51,19 @@
             [
               "󰍉 Find Word"
               "Telescope live_grep"
-              "fw"
+              "fg"
             ]
             [
               " Recent Files"
               "Telescope oldfiles"
-              "fr"
+              "p"
             ]
             [
               " File Browser"
               "Telescope file_browser"
               "fb"
             ]
-            [
-              "󰧑 SecondBrain"
-              "edit ~/projects/personal/SecondBrain"
-              "sb"
-            ]
+
           ];
           highlight = "string";
           defaultColor = "";

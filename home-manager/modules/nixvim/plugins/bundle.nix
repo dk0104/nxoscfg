@@ -6,5 +6,8 @@
     ./telescope.nix
     ./lualine.nix
     ./treesitter.nix
+    ./neo-tree.nix
+    ./lazygit.nix
+    ./yazi.nix
   ];
 }
