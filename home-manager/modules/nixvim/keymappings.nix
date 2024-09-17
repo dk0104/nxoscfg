@@ -35,11 +35,6 @@
           "<leader>s" = ":w<CR>";
           "<C-s>" = ":w<CR>";
 
-          # navigate to left/right window
-          "<leader>h" = "<C-w>h";
-          "<leader>l" = "<C-w>l";
-
-
           # resize with arrows
           "<C-Up>" = ":resize -2<CR>";
           "<C-Down>" = ":resize +2<CR>";
@@ -51,7 +46,6 @@
           "<M-k>" = ":move-2<CR>";
           "<M-j>" = ":move+<CR>";
 
-          "<leader>rp" = ":!remi push<CR>";
         };
       visual =
         lib.mapAttrsToList

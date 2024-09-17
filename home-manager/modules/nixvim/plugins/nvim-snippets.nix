@@ -1,8 +1,7 @@
 {
     programs.nixvim = {
         plugins.nvim-snippets = {
-          enbable = true; 
+          enable = true; 
        };
-    }:
-
+    };
 }

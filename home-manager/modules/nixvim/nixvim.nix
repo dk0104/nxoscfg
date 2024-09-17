@@ -14,6 +14,14 @@
     enable = true;
     defaultEditor = true;
     colorschemes.catppuccin.enable = true;
+    performance = {
+      combinePlugins = {
+        enable = true;
+        standalonePlugins = [
+        ];
+      };
+      byteCompileLua.enable = true;
+    };
     viAlias = true;
     vimAlias = true;
     luaLoader.enable = true;
