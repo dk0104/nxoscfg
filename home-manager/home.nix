@@ -54,6 +54,7 @@
       xfce.thunar
       xfce.thunar-volman
       libsForQt5.polkit-kde-agent
+      zotero
 
       # GUI utils
       archi
