@@ -9,5 +9,6 @@
     ./neo-tree.nix
     ./lazygit.nix
     ./yazi.nix
+    ./lsp.nix
   ];
 }
