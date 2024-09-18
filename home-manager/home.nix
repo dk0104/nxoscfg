@@ -71,6 +71,11 @@
       vscode
       eclipses.eclipse-sdk
       dbeaver-bin
+      go 
+      gopls
+      delve
+      expr
+      exercism
 
       # Audio and Media tools
       pavucontrol
@@ -106,7 +111,10 @@
       libtool
       light
       lux
+      mbsync
       mediainfo
+      msmtp
+      mu
       neofetch
       nix-index
       openssl
