@@ -10,6 +10,7 @@
     ./lazygit.nix
     ./yazi.nix
     ./lsp.nix
+    ./toggleterm.nix
         #    ./nvim-snippets.nix
   ];
 }

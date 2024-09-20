@@ -17,7 +17,7 @@
 
       monitor = [ 
       "eDP,1920x1080@90,auto,1"
-      "HDMI-A-1,2560x1440@59.95,auto,1,transform, 2"
+      "HDMI-A-1,2560x1440@59.95,auto,1"
       "desc:Samsung Electric Company LC49G95T H4ZR300052,preferd,auto,1"
       ];
 
@@ -167,6 +167,7 @@
             "$mainMod, F, togglefloating,"
             "$mainMod, P, pseudo, # dwindle"
             "$mainMod, J, togglesplit, # dwindle"
+            "$mainMod, X, exec,hyprlock"
 
             # Move focus with mainMod + arrow keys
             "$mainMod, left,  movefocus, l"

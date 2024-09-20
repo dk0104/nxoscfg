@@ -107,17 +107,18 @@
       git
       gnupg
       htop
+      isync
       lazygit
       libtool
       light
       lux
-      mbsync
       mediainfo
       msmtp
       mu
       neofetch
       nix-index
       openssl
+      offlineimap
       pass
       pass-git-helper
       passExtensions.pass-otp
@@ -130,6 +131,7 @@
       sshs
       starship
       tmux
+      texlive.combined.scheme-medium
       tree
       unzip
       vim
