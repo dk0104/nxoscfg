@@ -11,6 +11,7 @@
     };
     initExtra = ''
      eval "$(zoxide init zsh --cmd cd)"
+     export MOZ_ENABLE_WAYLAND=1
     '';
     oh-my-zsh = {
     enable = true;

@@ -153,6 +153,7 @@
             "foot --server"
             "nwggrid-server"
             "exec-once=systemctl --user start plasma-polkit-agent"
+            "dbus-update-activation-environment  --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
           ];
 
           bind = [
