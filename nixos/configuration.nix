@@ -15,6 +15,7 @@
     # Use the systemd-boot EFI boot loader.
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
+    boot.kernelParams = ["xe.force_probe=46a8"];
 
     # Filesystem setup for btrfs
     fileSystems = {
@@ -38,6 +39,20 @@
         };
       };
     };
+
+    # Intel graphics
+    nixpkgs.config.packageOverrides = pkgs: {
+      intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
+    };
+    hardware.graphics = { # hardware.graphics on unstable
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-media-driver # LIBVA_DRIVER_NAME=iHD
+      intel-vaapi-driver # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
+      libvdpau-va-gl
+    ];
+    };
+    environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
 
 
 
@@ -69,18 +84,18 @@
         channel = "https://nixos.org/channels/nixos-23.05";
       };
 
-#xdg
-    xdg.portal = {
-      enable = true;
-      xdgOpenUsePortal = false;
-      #gtkUsePortal = true;
-      extraPortals = with pkgs; [
-        # xdg-desktop-portal-gtk
-        xdg-desktop-portal-hyprland
-        #xdg-desktop-portal-wlr
-      ];
-      #wlr.enable = true;
-    };
+      #xdg
+      xdg.portal = {
+        enable = true;
+        xdgOpenUsePortal = false;
+        #gtkUsePortal = true;
+        extraPortals = with pkgs; [
+          # xdg-desktop-portal-gtk
+          xdg-desktop-portal-hyprland
+          #xdg-desktop-portal-wlr
+        ];
+        #wlr.enable = true;
+      };
 
 
 

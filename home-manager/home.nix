@@ -76,6 +76,7 @@
       delve
       expr
       exercism
+      qmk
 
       # Audio and Media tools
       pavucontrol
