@@ -11,6 +11,8 @@
     ./yazi.nix
     ./lsp.nix
     ./toggleterm.nix
+    ./obsidian.nix
+    ./cmp.nix
         #    ./nvim-snippets.nix
   ];
 }
