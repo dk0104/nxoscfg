@@ -13,6 +13,7 @@
     ./toggleterm.nix
     ./obsidian.nix
     ./cmp.nix
-        #    ./nvim-snippets.nix
+    ./nix.nix
+        #   ./nvim-snippets.nix
   ];
 }
