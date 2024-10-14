@@ -12,6 +12,7 @@
     initExtra = ''
      eval "$(zoxide init zsh --cmd cd)"
      export MOZ_ENABLE_WAYLAND=1
+     export TERM="xterm-256color"
     '';
     oh-my-zsh = {
     enable = true;

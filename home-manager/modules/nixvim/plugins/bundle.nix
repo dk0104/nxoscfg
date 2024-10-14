@@ -5,7 +5,7 @@
     ./startup.nix
     ./telescope.nix
     ./lualine.nix
-    ./treesitter.nix
+        #./treesitter.nix
     ./neo-tree.nix
     ./lazygit.nix
     ./yazi.nix
@@ -14,6 +14,7 @@
     ./obsidian.nix
     ./cmp.nix
     ./nix.nix
-        #   ./nvim-snippets.nix
+    ./web-devicons.nix
+    #   ./nvim-snippets.nix
   ];
 }
