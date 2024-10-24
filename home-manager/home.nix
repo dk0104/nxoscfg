@@ -22,6 +22,7 @@
       kubectl
       kubernetes-helm
       minikube
+      k9s
 
       # wm
       hypridle
@@ -49,6 +50,7 @@
       foot
       obsidian
       openconnect
+      openstackclient
       pcmanfm
       wofi
       xfce.thunar
