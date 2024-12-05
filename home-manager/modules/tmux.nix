@@ -18,24 +18,18 @@ in {
         plugin = tmuxPlugins.catppuccin;
         extraConfig = ''
           set -g @catppuccin_flavor 'mocha' # latte,frappe, macchiato or mocha
-          set -g @catppuccin_window_status_style "rounded"
-          set -g @catppuccin_window_status "icon"
-          set -g @catppuccin_window_default_fill "number"
-          set -g @catppuccin_window_default_text "#W"
+          set -g @catppuccin_window_status_style "slanted"
+          
+          # Make the status line pretty and add some modules
+          set -g status-right-length 100
+          set -g status-left-length 100
+          set -g status-left ""
+          set -g status-right "#{E:@catppuccin_status_application}"
+          set -agF status-right "#{E:@catppuccin_status_cpu}"
+          set -ag status-right "#{E:@catppuccin_status_session}"
+          set -ag status-right "#{E:@catppuccin_status_uptime}"
+          set -agF status-right "#{E:@catppuccin_status_battery}"
 
-          set -g @catppuccin_window_current_fill "number"
-          set -g @catppuccin_window_current_text "#W"
-
-          set -g @catppuccin_status_modules_right "directory application session date_time battery "
-          set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
-          set -g @catppuccin_status_connect_separator "yes"
-          set -g @catppuccin_icon_window_last "󰖰"
-          set -g @catppuccin_icon_window_current "󰖯"
-          set -g @catppuccin_icon_window_zoom "󰁌"
-          set -g @catppuccin_icon_window_mark "󰃀"
-          set -g @catppuccin_icon_window_silent "󰂛"
-          set -g @catppuccin_icon_window_activity "󱅫"
-          set -g @catppuccin_icon_window_bell "󰂞"
         '';
       }
 
@@ -73,6 +67,11 @@ in {
       tmuxPlugins.fingers
       tmuxPlugins.yank
       tmuxPlugins.tmux-fzf
+      tmuxPlugins.fzf-tmux-url
+      tmuxPlugins.cpu
+      tmuxPlugins.mode-indicator
+      tmuxPlugins.extrakto
+
     ];
     extraConfig = ''
       # unbind C-b

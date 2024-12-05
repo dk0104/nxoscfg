@@ -21,8 +21,10 @@
       helm-docs
       kubectl
       kubernetes-helm
+      kustomize
       minikube
       k9s
+      kubelogin-oidc
 
       # wm
       hypridle
@@ -55,6 +57,7 @@
       wofi
       xfce.thunar
       xfce.thunar-volman
+      gvfs
       libsForQt5.polkit-kde-agent
       zotero
 
@@ -118,6 +121,7 @@
       mediainfo
       msmtp
       mu
+      nodejs_22
       neofetch
       nix-index
       openssl
@@ -129,6 +133,7 @@
       portal
       procs
       ripgrep
+      radio-cli
       scrot
       silver-searcher
       sshs
@@ -148,7 +153,7 @@
       zram-generator
 
       # virtualisation
-      virtualbox
+      #virtualbox
 
       # Java
       swt

@@ -53,6 +53,7 @@
     ];
     };
     environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
+    virtualisation.virtualbox.host.enable =  true;
 
 
 

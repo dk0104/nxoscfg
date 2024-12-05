@@ -1,6 +1,8 @@
 {inputs, pkgs, ...}:{
   nixpkgs.config = {
     allowUnfree = true;
+    virtualization.virtualbox.host.enable = true;
+    virtualization.vixtualbox.host.enableExtensionPack = true;
     permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
   };
   programs = {
@@ -35,7 +37,6 @@
     # GPU stuff
     amdvlk
     glaxnimate
-    rocm-opencl-icd
 
     # Other
     spice-vdagent

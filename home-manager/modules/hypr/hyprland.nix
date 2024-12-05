@@ -14,11 +14,10 @@
       "$mainMod" = "SUPER";
       "$launcher" = "walker";
 
-
       monitor = [ 
-      "eDP,1920x1080@90,auto,1"
-      "HDMI-A-1,2560x1440@59.95,auto,1"
-      "desc:Samsung Electric Company LC49G95T H4ZR300052,preferd,auto,1"
+      "eDP, 1920x1080@60, 0x0, 1"
+      "HDMI-A-1, 2560x1440@59.95, 0x-1080, 1"
+      "desc:Samsung Electric Company LC49G95T H4ZR300052, preferd, auto, 1"
       ];
 
       # plugin = {
