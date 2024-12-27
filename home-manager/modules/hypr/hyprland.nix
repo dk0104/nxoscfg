@@ -15,8 +15,8 @@
       "$launcher" = "walker";
 
       monitor = [ 
-      "eDP, 1920x1080@60, 0x0, 1"
-      "HDMI-A-1, 2560x1440@59.95, 0x-1080, 1"
+      "eDP, 1920x1080@60, auto, 1"
+      "HDMI-A-1, 2560x1440@59.95, auto, 1"
       "desc:Samsung Electric Company LC49G95T H4ZR300052, preferd, auto, 1"
       ];
 
@@ -84,11 +84,11 @@
               new_optimizations = true;
             };
 
-            drop_shadow = true;
-            shadow_range = 4;
-            shadow_render_power = 3;
-            "col.shadow" = "$surface0";
-            "col.shadow_inactive" = "$surface0";
+            # drop_shadow = true;
+            # shadow_range = 4;
+            # shadow_render_power = 3;
+            # "col.shadow" = "$surface0";
+            # "col.shadow_inactive" = "$surface0";
           };
 
           animations = {

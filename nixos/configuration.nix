@@ -70,7 +70,9 @@
       nix.settings = {
         substituters = ["https://hyprland.cachix.org"];
         trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-        experimental-features = ["nix-command"];
+        experimental-features = ["nix-command"  "flakes"];
+        warn-dirty = false;
+        auto-optimise-store = true;
       };
 
       #Garbage colector
@@ -83,6 +85,11 @@
       system.autoUpgrade = {
         enable = true;
         channel = "https://nixos.org/channels/nixos-23.05";
+      };
+
+      security.pam.services =  {
+        login.u2fAuth =  true;
+        sudo.u2fAuth =  true;
       };
 
       #xdg

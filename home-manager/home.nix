@@ -20,6 +20,7 @@
       helm-dashboard
       helm-docs
       kubectl
+      kubectx
       kubernetes-helm
       kustomize
       minikube
@@ -97,13 +98,18 @@
       # Themes
 
       # CLI utils
+      asciiquarium
       bat
       bottom
       brightnessctl
+      broot
+      bfs
       cava
+      caligula
       ncurses
       cheat
       dysk
+      delta
       eza
       fastfetch
       fd
@@ -141,6 +147,7 @@
       tmux
       texlive.combined.scheme-medium
       tree
+      ttyper
       unzip
       vim
       wget
@@ -150,6 +157,7 @@
       zathura
       zip
       zoxide
+      zsh-you-should-use
       zram-generator
 
       # virtualisation

@@ -46,13 +46,12 @@
   ];
 
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
     fantasque-sans-mono
-    fira-code-nerdfont
+    nerd-fonts.fira-code
+    nerd-fonts.hack
     font-awesome
     iosevka
     jetbrains-mono
-    nerdfonts
     noto-fonts
     noto-fonts-emoji
     powerline-fonts
